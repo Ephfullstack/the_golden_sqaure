@@ -1,4 +1,4 @@
-require "grammar_stats"
+require "grammer_stats"
 
 RSpec.describe GrammarStats do
   describe "@check" do

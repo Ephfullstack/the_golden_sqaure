@@ -16,6 +16,8 @@ class GrammarStats
     end
     @texts_checked += 1
   end
+
+  
    # text is a string
     # Returns true or false depending on whether the text begins with a capital
     # letter and ends with a sentence-ending punctuation mark.
