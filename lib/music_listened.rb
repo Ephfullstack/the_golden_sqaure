@@ -4,11 +4,11 @@ class Musiclistened
       @list = []
     end 
         
-    def adding(track)
+    def add(track)
       @list.push(track)
     end 
     
-    def returning
+    def return
       return @list
     end
 

@@ -10,15 +10,17 @@ I want to add tracks I've listened to and see a list of them
 
 ## 2. Design the Class Interface
 
-class Playlist
-  def initializer(name) #name represents name of songs 
+```ruby
+class Musiclistened 
+
+  def initialize(name) #name represents name of songs 
   end 
 
-  def add_track(task) #task is a string representing an instruction to add music 
+  def add(task) #task is a string representing an instruction to add music 
   # will return no value 
   end
 
-  def list 
+  def return 
     # return the list of songs added to the playlist
     end 
 end 
@@ -30,48 +32,29 @@ end
 _Include the initializer and public methods with all parameters and return values._
 
 
-```ruby
-# EXAMPLE
-
-class Reminder
-  def initialize(name) # name is a string
-    # ...
-  end
-
-  def remind_me_to(task) # task is a string
-    # No return value
-  end
-
-  def remind()
-    # Throws an exception if no task is set
-    # Otherwise, returns a string reminding the user to do the task
-  end
-end
-```
-
 ## 3. Create Examples as Tests
 
 #1
-Playlist = Playlist.new
-playlist.list # => []
+music_listened = Musiclistened.new
+playlist.return # => []
 
 # 2
-Playlist = Playlist.new
-Playlist.add("take me down")
-playlist.list # => ["take me down"]
+music_listened = Musiclistened.new
+Playlist.add("take care")
+playlist.return  # => ["take care"]
 
 # 3
-Playlist = Playlist.new
-Playlist.add("take me down")
-playlist.add("marvins room")
-playlist.list # => ["take me down", "marvins room"]
+music_listened = Musiclistened.new
+music_listened.add("take care")
+music_listened.add("jungle")
+playlist.return # => ["take care", "jungle"]
 
 # 4
-Playlist = Playlist.new
-Playlist.add("take me down")
-playlist.add("marvins room")
-playlist.complete("take me down")
-playlist.list # => ["take me down", "marvins room"]
+music_listened = Musiclistened.new
+music_listened.add("take care")
+music_listened.add("jungle")
+music_listened.return # => ["take care", "jungle]
+
 
 
 
